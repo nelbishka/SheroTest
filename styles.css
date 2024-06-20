@@ -1,0 +1,169 @@
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+.banners{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+}
+
+.first-image {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    height: 100%;
+}
+
+.second-image {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 100%;
+}
+
+.third-image {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 100%;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.products p{
+    width: 90%;
+    position: relative;
+    margin: auto;
+    top: -150px;
+    text-align: center;
+    font-size: large;
+    color: rgb(133, 131, 131);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.products img{
+    margin: auto;
+}
+
+.products button{
+    margin: auto;
+    background-color: rgb(97, 97, 255);
+    color: white;
+    border: 0;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+}
+
+li{
+    list-style-type: none;
+    background-color: white;
+}
+
+.carousel{
+    width: 100%;
+    margin-left: -100px; 
+    margin-top: 100px;
+    background-color: rgb(224, 224, 224);
+    padding: 100px;
+}
+
+li>p:nth-child(2){
+    color: blue;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li>p:nth-child(3){
+    font-weight: 20;
+    font-family:'Franklin Gothic Light', 'Arial Narrow', Arial, sans-serif
+}
+
+.glide__slide img{
+    width: 100%;
+}
+
+.glide__slide{
+    text-align: center;
+    height:auto  !important;
+}
+
+@media screen and (max-width: 1300px){
+    .banners{
+        display: flex;
+        flex-direction: column;
+    } 
+    .products{
+        width: 100%;
+    }
+    .products p{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 890px){
+    .flexbox{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .products {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        padding: 20px; 
+        width: 100%; 
+        gap: 40px;
+        border-bottom: 1px solid rgb(204, 204, 204);
+    }
+
+    .products img{
+        margin: 0;
+    }
+
+    .products p {
+        position: relative;
+        top: 0;
+        width: 100% ;
+        font-size: medium;
+    }
+
+    .text-container button {
+       position: relative;
+       top: 0;
+       background-color: transparent;
+       color: rgb(57, 133, 255);
+       font-weight: bold;
+       font-size: 15px;
+       padding: 0px !important;
+       margin: 0px !important;
+       width: 70%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .carousel{
+        width: 70%;
+        position: relative;
+        left: 45px;
+    }
+    
+}
